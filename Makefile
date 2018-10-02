@@ -76,7 +76,7 @@ OBJ := $(SRC:src/%.c=build/%.o)
 DEP := $(OBJ:%.o=%.d)
 INC := -Iinclude
 
-CFLAGS += -DVERSION=\"$(GIT_VERSION)\"
+CFLAGS += -DVERSION=\"$(GIT_VERSION)\" -Wno-packed
 
 TARGET = build/xhyve
 
